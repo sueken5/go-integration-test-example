@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package apis.sample;
+
+option go_package = "apis;sample";
+
+service Sample {
+  rpc Put (PutRequest) returns (PutResponse) {}
+}
+
+message PutRequest {
+  string message = 1;
+}
+
+message PutResponse {
+}
